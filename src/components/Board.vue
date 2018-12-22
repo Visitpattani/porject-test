@@ -2,13 +2,19 @@
 <template>
 
   <div id="board" class="container">
-    
+    <div>
+    <v-btn v-on:click="calculate" color="success">Success</v-btn>
+    <v-btn color="error">Error</v-btn>
+    <v-btn color="warning">Warning</v-btn>
+    <v-btn color="info">Info</v-btn>
+  </div>
     <div class = "page-header">
-      <h1 align="center">Visit Pattani</h1>
+      
       <div>
         <h2>ผลการเก็บข้อมูลจากการ Check In </h2>
         
       <div class="row">
+        
 <div class="col-sm-2"><h1><b-form-select  v-model="selected2" :options="options2" class="mb-3"  /></h1></div>
 <div class="col-sm-2"> <h1><b-form-select  v-model="selected1" :options="options1" class="mb-3" /></h1></div>
 <div class="col-sm-2"> <h1><b-form-select v-model="selected" :options="options" class="mb-3" /></h1></div>
